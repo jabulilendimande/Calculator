@@ -1,0 +1,9 @@
+.number-buttons{
+    padding:50px;
+}
+button{
+    display:block;
+}
+.operation-btn > button{
+    display: flex;
+}
