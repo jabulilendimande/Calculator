@@ -2,8 +2,14 @@
     padding:50px;
 }
 button{
-    display:block;
+    /*display:block;*/
+    border-radius: 5px solid black;
+    padding:20px;
 }
 .operation-btn > button{
     display: flex;
+}
+.btns > button{
+    padding:20px;
+    display:block;
 }
