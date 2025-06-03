@@ -1,21 +1,28 @@
-var add = document.getElementById("addition");
-add.addEventListener("click", () => {
-      
-});
-var value ;
-var opr ;
+var opr = document.getElementById("operations-btn");
+var value1 ;
+var value2 ;
+var output = document.getElementById("inputBox");
+var newLine = true;
+var currOpr;
+
 
 function operatorBtn(opr){
-    currOpr = opr;
-    value = parseInt(document.getElementById("inputBox").value);
+    currOpr = opr ;
+    value1 = parseInt(document.getElementById("inputBox").value);
     newLine = true;
-     /*switch(opr){
-        case "+":
-     }*/
+    /*document.getElementById("inputBox").value = currOpr;
+     switch(currOpr){
+        case addOpr:
+            break;
+        case subOpr:
+            break;
+        case mulOpr:
+            break;
+        case delOpr:
+            break;}*/
 }
-var newLine = true;
 
-var buttonValue = document.getElementsByClassName("number-buttons");
+/*show number pressed on screen */
 function showOnScreen(buttonValue){
     if(newLine){
         document.getElementById("inputBox").value = buttonValue;
@@ -28,12 +35,34 @@ function showOnScreen(buttonValue){
 }
 
 function clearBox(){
+    //remove all from screen and go back to default
     document.getElementById("inputBox").value = 0;
     newLine = true;
 }
 
 function equalBtn(){
+    var value2 = parseInt(document.getElementById("inputBox").value);
+    var finalT ;
 
-    var total;
-
+    switch(currOpr){
+        case "+":
+            finalT = value1 + value2;
+            break;
+        case "-":
+            finalT = value2 - value1;
+            break;
+        case "x":
+            finalT = value1 * value2;
+            break;
+        case "/":
+            if(value2 !== 0){
+                finalT = value1 / value2;
+            }else{
+                finalT = undefined;
+            }
+            break;
+    }
+    document.getElementById("inputBox").value = finalT;
+    value1 = 0;
+    newLine = true;
 }
