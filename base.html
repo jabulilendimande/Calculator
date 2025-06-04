@@ -8,21 +8,26 @@
     </head>
     <body>
         <h1>Calculator</h1>
+        <section>
 <!--user input-->
         <input type="text" id="inputBox" value="0"/>
 
         <!--numbers-->
         <div class="number-buttons">
+            <div class="top-buttons">
             <button type="button" id="zero" onclick="numValue(0)">0</button>
             <button type="button" id="one" onclick="numValue(1)">1</button>
             <button type="button" id="two" onclick="numValue(2)">2</button>
             <button type="button" id="three" onclick="numValue(3)">3</button>
             <button type="button" id="four" onclick="numValue(4)">4</button>
+            </div>
+            <div class="bottom-buttons">
             <button type="button" id="five" onclick="numValue(5)">5</button>
             <button type="button" id="six" onclick="numValue(6)">6</button>
             <button type="button" id="seven" onclick="numValue(7)">7</button>
             <button type="button" id="eight" onclick="numValue(8)">8</button>
             <button type="button" id="nine" onclick="numValue(9)">9</button>
+            </div>
         </div>
 
         <div class="operation-btn">
@@ -34,9 +39,10 @@
         </div>
 
         <div class="btns">
-            <button type="button" id="equal" onclick="equalBtn()">=</button>
             <button type="button" id="clear-all" onclick="clearBox()">Clear</button>
+            <button type="button" id="equal" onclick="equalBtn()">=</button>
         </div>
+        </section>
 
     <script src="events.js"></script>
     </body>
