@@ -70,13 +70,21 @@ function equalBtn(){
 }
 
 /*
-light - fire js to change to background white
-                    colorChange(selectedColor){
-                        switch(secelcetColor){
-                          case "dark":
-                            document.getElementById("dark").style = body{ background-color:black}; 
-                            break;
-                            case "white":
-                            break;
-                        }
-                    }*/
+light - fire js to change to background white*/
+var color1 = document.getElementById("dark");
+var color2 = document.getElementById("white");
+function colorChange(selectedColor){
+    if(selectedColor==='dark'){
+        document.body.style.backgroundColor = "black";
+    }
+    else if(selectedColor==='white'){
+        document.body.style.backgroundColor = "white";
+    }
+                        
+}
+      
+var history = document.getElementById("history");
+history.addEventListener("click",popHistory());
+function popHistory(){
+    
+}
