@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link href="styles.css" rel="stylesheet" type="text/css"/>
-    <link href="events.js"/>
+    <!--script href="events.js"></script>-->
     </head>
     <body>
         <h1>Calculator</h1>
@@ -13,31 +13,31 @@
 
         <!--numbers-->
         <div class="number-buttons">
-            <button type="submit" id="zero">0</button>
-            <button type="submit" id="one">1</button>
-            <button type="submit" id="two">2</button>
-            <button type="submit" id="three">3</button>
-            <button type="submit" id="four">4</button>
-            <button type="submit" id="five">5</button>
-            <button type="submit" id="six">6</button>
-            <button type="submit" id="seven">7</button>
-            <button type="submit" id="eight">8</button>
-            <button type="submit" id="nine">9</button>
+            <button type="button" id="zero" onclick="numValue(0)">0</button>
+            <button type="button" id="one" onclick="numValue(1)">1</button>
+            <button type="button" id="two" onclick="numValue(2)">2</button>
+            <button type="button" id="three" onclick="numValue(3)">3</button>
+            <button type="button" id="four" onclick="numValue(4)">4</button>
+            <button type="button" id="five" onclick="numValue(5)">5</button>
+            <button type="button" id="six" onclick="numValue(6)">6</button>
+            <button type="button" id="seven" onclick="numValue(7)">7</button>
+            <button type="button" id="eight" onclick="numValue(8)">8</button>
+            <button type="button" id="nine" onclick="numValue(9)">9</button>
         </div>
 
         <div class="operation-btn">
             <!--operations center-->
-            <button type="submit" id="addition">+</button>
-            <button type="submit" id="subtraction">-</button>
-            <button type="submit" id="multiply">*</button>
-            <button type="submit" id="divide">/</button>
+            <button type="button" id="addition" onclick="operatorBtn('+')">+</button>
+            <button type="button" id="subtraction" onclick="operatorBtn('-')">-</button>
+            <button type="button" id="multiply" onclick="operatorBtn('*')">*</button>
+            <button type="button" id="divide" onclick="operatorBtn('/')">/</button>
         </div>
 
         <div class="btns">
-            <button type="submit" id="equal" onclick="equalBtn()">=</button>
-            <button type="submit" id="clear-all" onclick="clearBox()">Clear</button>
+            <button type="button" id="equal" onclick="equalBtn()">=</button>
+            <button type="button" id="clear-all" onclick="clearBox()">Clear</button>
         </div>
 
-
+    <script src="events.js"></script>
     </body>
 </html>
