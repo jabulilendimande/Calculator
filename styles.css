@@ -48,3 +48,31 @@ button{
     width: 80px;
     margin:8px;
 }
+
+/*styling the drop down */
+ul, li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding: 8px 12px;
+}
+ul{
+    position:relative;
+    display:inline-block;
+}
+ul ul , ul ul ul {
+    display:none;
+    position:absolute;
+    background-color:black;
+    z-index:10;
+}
+ul li:hover > ul{
+    display: block;
+    top:100%;
+    left:0;
+}
