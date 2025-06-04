@@ -10,27 +10,28 @@
         <section>
             <h1>Calculator</h1>
             
+        <section id="dropdown">
             <ul>
                 <li><a href="#">Settings</a>
                     <ul>
                         <li>
                             <a href="#">Theme</a>
                             <ul>
-                                <li><input type="radio" id="dark" /><label for="dark">dark</label></li>
-                                <li><input type="radio" id="white" /><label for="white">white</label></li>
+                                <li><input type="radio" id="dark" /><label for="dark" onclick="changeColor('dark')">dark</label></li>
+                                <li><input type="radio" id="white" /><label for="white" onclick="changeColor('white')">white</label></li>
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                    <div id="history">
-                        <textarea rows="2" cols="30"></textarea>
-                    </div>
-                </li>
+                </li>  
             </ul><!--drop down
             -->
-
+                <div class="history">
+                    <a href="#">History</a>
+                    <!--div id="history">
+                        <textarea rows="2" cols="30"></textarea>
+                </div  >-->
+                </div>
+        </section>
 
 <!--user input-->
         <input type="text" id="inputBox" value="0"/>
