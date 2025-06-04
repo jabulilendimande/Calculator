@@ -68,3 +68,15 @@ function equalBtn(){
     document.getElementById("inputBox").value = finalT;
     newLine = true;
 }
+
+/*
+light - fire js to change to background white
+                    colorChange(selectedColor){
+                        switch(secelcetColor){
+                          case "dark":
+                            document.getElementById("dark").style = body{ background-color:black}; 
+                            break;
+                            case "white":
+                            break;
+                        }
+                    }*/
