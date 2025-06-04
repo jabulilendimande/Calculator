@@ -1,15 +1,47 @@
+section{
+    background-color: grey;
+    border-radius:  5px ;
+    border: 1px solid white;
+    padding :20px;
+    width:400px;
+    margin:auto;
+}
+
+#inputBox{
+    padding:15px;
+    width:90%;
+    border-radius: 10px ;
+    border: 2px solid black;
+}
+
 .number-buttons{
     padding:50px;
+    margin: 10px;
 }
+.top-buttons,
+.bottom-buttons {
+    display:block;
+    gap: 30px;
+ }
+
+.operation-btn {
+    display:block;
+    margin-left: 90px;
+    margin-right: 50px;
+}
+
+.btns {
+    display:block;
+    left:0;
+    margin-left: 95px;
+}
+
 button{
     /*display:block;*/
-    border-radius: 5px solid black;
+    border-radius: 5px; 
     padding:20px;
 }
-.operation-btn > button{
-    display: flex;
-}
-.btns > button{
-    padding:20px;
-    display:block;
+#equal , #clear-all{
+    width: 80px;
+    margin:8px;
 }
