@@ -52,7 +52,7 @@ function equalBtn(){
         case "-":
             finalT = value1 - value2;
             break;
-        case "*":
+        case "x":
             finalT = value1 * value2;
             break;
         case "/":
