@@ -46,6 +46,9 @@ function equalBtn(){
     let finalT ;
 
     switch(currOpr){
+        case "^":
+            finalT = Math.pow(value1, value2);
+            break;
         case "+":
             finalT = value1 + value2;
             break;
@@ -88,3 +91,4 @@ history.addEventListener("click",popHistory());
 function popHistory(){
     
 }
+
