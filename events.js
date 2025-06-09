@@ -49,6 +49,8 @@ function equalBtn(){
         case "^":
             finalT = Math.pow(value1, value2);
             break;
+        case "":
+            break;
         case "+":
             finalT = value1 + value2;
             break;
